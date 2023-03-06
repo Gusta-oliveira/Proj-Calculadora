@@ -41,8 +41,9 @@
             }
             double Divisao()
             {
-                double div;
+                double div = 0;
                 div = num1 / num2;
+
                 return div;
             }
 
@@ -80,8 +81,14 @@
                         break;
 
                     case 4:
-                        Console.WriteLine($"A divisão dos números é: {Divisao()}");
-                        Console.ReadLine();
+                        if(num2 != 0){
+                            Console.WriteLine($"A divisão dos números é: {Divisao()}");
+                            Console.ReadLine();
+                        }
+                        else {
+                            Console.WriteLine("Imposivel divisão por ZERO!");
+                            Console.ReadLine();
+                        }
                         break;
 
                     case 5:
